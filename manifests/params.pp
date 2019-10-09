@@ -30,6 +30,7 @@
 class mailman::params {
   $mm_package = 'mailman'
   $mm_service = 'mailman'
+  $default_url_pattern = 'http://%s/mailman/'
   case $::osfamily {
     'RedHat': {
       $mm_username   = 'mailman'

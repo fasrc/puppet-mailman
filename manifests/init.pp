@@ -106,6 +106,7 @@ class mailman (
   $archive_dir           = $mailman::params::archive_dir,
   $pid_file              = $mailman::params::pid_file,
   $option_hash           = { 'DEFAULT_MAX_NUM_RECIPIENTS' => 20 },
+  $default_url_pattern   = $mailman::params::default_url_pattern,
 ) inherits mailman::params {
   $langs = ['ar','ca','cs','da','de','en','es','et','eu','fi','fr','gl','he',
     'hr','hu','ia','it','ja','ko','lt','nl','no','pl','pt','pt_BR','ro',
